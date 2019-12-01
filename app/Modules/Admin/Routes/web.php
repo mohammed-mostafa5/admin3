@@ -12,5 +12,5 @@
 */
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
 });
